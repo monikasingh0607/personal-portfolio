@@ -3,18 +3,69 @@
 {% load static %}
 
 {% block content %}
+<br>
+<br>
+<br>
 
-<div class="row justify-content-center my-3">
-  <div class="col-5">
-    <img src="{% static 'portfolio/monika.jpg' %}" class="img-fluid">
+
+
+
+<div class="letters">
+<div>M</div>
+  <div>o</div>
+  <div>n</div>
+<div>i</div>
+  <div>k</div>
+  <div>a</div>
+  <div>S</div>
+  <div>i</div>
+  <div>n</div>
+<div>g</div>
+  <div>h</div>
+
   </div>
+  <br>
+   &nbsp;
+  <div class="letters">
+<div>W</div>
+  <div>e</div>
+  <div>b</div>
+  <div>D</div>
+  <div>e</div>
+<div>v</div>
+  <div>e</div>
+  <div>l</div>
+  <div>o</div>
+ <div>p</div>
+ <div>e</div>
+<div>r</div>
+
+
+
+<script>
+   let letters= document.querySelectorAll('.letters div');
+
+window.addEventListener('load',()=>
+letters.forEach((letter,i)=>                      letter.style.animation = `slide 2s ease forwards ${i/3 +0.3}s`))
+</script>
 </div>
 
-<div class="row justify-content-center mb-3">
-  <div class="col-md-9 text-center">
-    <h1 id="hometext" class="font-weight-bold">Monika is a web developer and she lives in Rajasthan</h1>
-  </div>
-</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <h2 class="mt-5">Portfolio</h2>
 <hr>

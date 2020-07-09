@@ -6,19 +6,38 @@
     color: rgba(0,0,0,.5) !important;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
+body{
+background: #FFAFBD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
-#blogtitle {
-    font-size: 6rem;
+.letters{
+  text-shadow: 1px 1px;
+  color: black;
+  font-family: 'lato', cursive;
+  font-size: 2rem;
+  position: relative;
+  top: 100px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:left;
 }
 
-@media (min-width: 992px) {
-    #hometext {
-        font-size: 4rem;
-    }
-    #blogdetailtitle {
-        font-size: 5rem;
-    }
+.letters div{
+  position:relative;
+  left:200vh;
+  letter-spacing:0.2rem;
+transition: all 2s ease-in;
+}
+
+@keyframes slide{
+  0%{
+    left:200vh
+  }
+  100%{
+    left:0
+  }
 }
